@@ -1,0 +1,53 @@
+/*
+======================
+ABOUT SECTION
+======================
+*/
+
+.about {
+
+ &--img,
+ &--info {
+  padding: 2rem 0;
+ }
+
+ &__picture-container {
+  background: var(--clr-primary);
+  border: 0.5rem solid var(--clr-primary);
+  max-width: 30rem;
+  /* extra stuff */
+  overflow: hidden;
+  
+  &--img {
+   transition: var(--transition);
+  }
+  
+  // &:hover,
+  // &--img {
+  //  opacity: 0.5;
+  //  transform: scale(1.2);
+  // }
+ }
+
+ &--text {
+  max-width: 26rem;
+  color: var(--clr-grey-5);
+ }
+}
+
+.about__picture-container:hover .picture-container--img {
+ opacity: 0.5;
+ transform: scale(1.2);
+}
+
+@media screen and (min-width: 992px) {
+ .about--img,
+ .about--info {
+  float: left;
+  width: 50%;
+ }
+
+ .about--info {
+  padding-left: 2rem;
+ }
+}

@@ -1,0 +1,25 @@
+============
+GOOGLE fonts
+============
+<link href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700&family=Lobster+Two:wght@400;700&display=swap" rel="stylesheet">
+
+font-family: 'Lato', sans-serif; //secondary
+font-family: 'Lobster Two', cursive; //primary
+
+============
+FONT AWESOME
+============
+<script src="https://kit.fontawesome.com/da9eb10a60.js" crossorigin="anonymous"></script>
+
+code icon
+<i class="fas fa-laptop-code"></i>
+
+write icon
+<i class="fas fa-feather-alt"></i>
+
+design icon
+<i class="fas fa-pencil-ruler"></i>
+
+marketing
+<i class="fas fa-mail-bulk"></i>
+<i class="fas fa-funnel-dollar"></i>

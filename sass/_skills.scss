@@ -1,0 +1,51 @@
+.creative {
+ background: var(--clr-grey-10);
+
+ &__skill {
+  padding: 2.5rem 0;
+  text-align: center;
+  transition: var(--transition);
+
+  &:hover {
+   background: var(--clr-white);
+   box-shadow: 0 3px var(--clr-primary);
+  }
+
+  &:hover .creative--icon {
+   transform: translateY(-5px);
+  }
+ }
+ 
+ &--icon {
+  font-size: 2.5rem;
+  margin-bottom: 1.25rem;
+  transition: var(--transition);
+  display: inline-block;
+  color: var(--clr-primary);
+ }
+
+ &--text {
+  color: var(--clr-grey-5);
+  max-width: 17rem;
+  margin: 0 auto;
+ }
+}
+
+/*
+================
+MEDIA QUERIES
+================
+*/
+
+@media screen and (min-width: 576px) {
+ .creative__skill {
+  float: left;
+  width: 50%;
+ }
+}
+
+@media screen and (min-width: 1200px) {
+ .creative__skill {
+  width: 25%;
+ }
+}

@@ -1,0 +1,66 @@
+/*
+===================
+projects section
+===================
+*/
+
+.projects {
+ background: var(--clr-grey-10);
+
+ &__info {
+  padding: 2rem 0;
+ }
+
+ &__collection {
+  padding: 2rem 0;
+
+  &--list {
+   margin-bottom: 2rem;   
+  }
+  
+  &--img {
+   border-radius: var(--radius);
+   margin-bottom: 2rem;
+   height: 17rem;
+   object-fit: cover;
+  }
+ }
+ 
+ &--price {
+  color: var(--clr-primary);
+ }
+
+ &--text {
+  color: var(--clr-grey-5);
+  max-width: 26rem;
+ }
+}
+
+ @media screen and (min-width: 768px) {
+  .collection__list {
+   float: left;
+   width: 50%;
+   padding-right: 2rem;
+  }
+ }
+ 
+ @media screen and (min-width: 992px) {
+  .collection__list {
+   width: 33.3%;
+  }
+ }
+ 
+ @media screen and (min-width: 1200px) {
+  .projects__info {
+   float: left;
+   width: 30%;
+  }
+  .projects__collection {
+   float: left;
+   width: 70%;
+  }
+  .collection__list {
+   margin-bottom: 0;
+   padding: 0 1rem;
+  }
+ }

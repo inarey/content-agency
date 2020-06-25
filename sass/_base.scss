@@ -1,0 +1,88 @@
+/*
+===================
+google fonts
+===================
+*/
+
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@400;700&family=Lobster+Two:wght@400;700&display=swap');
+
+/*
+===================
+variable
+===================
+*/
+
+:root {
+ --clr-primary: #9e7edf;
+ --clr-primary-light: #cfb8fd;
+ --clr-grey-1: #15131a;
+ --clr-grey-5: #888097;
+ --clr-grey-10: #e6e0f0;
+ --clr-white: #faf9fc;
+ 
+ --ff-primary: 'Lato', sans-serif;
+ --ff-secondary: 'Lobster Two', cursive;
+ 
+ --transition: all 0.3s linear;
+ --spacing: 0.25rem;
+ --radius: 0.75rem;
+}
+
+* {
+ margin: 0;
+ padding: 0;
+ box-sizing: border-box;
+}
+
+body {
+ font-family: var(--ff-primary);
+ background-color: var(--clr-white);
+ color: var(--clr-grey-1);
+ line-height: 1.5;
+ font-size: 0.875rem;
+}
+
+a {
+ text-decoration: none;
+}
+
+img {
+ width: 100%;
+ display: block;
+}
+
+.clearfix::after,
+.clearfix::before {
+ content: "";
+ clear: both;
+ display: table;
+}
+
+/*
+===================
+variable
+===================
+*/
+.content-divider {
+ height: 0.5rem;
+ background: linear-gradient(
+  to left,
+  var(--clr-primary),
+  #E56399,
+  var(--clr-primary)
+ );
+}
+
+.section-center {
+ padding: 4rem 0;
+ width: 85vw;
+ margin: 0 auto;
+ max-width: 1170px;
+}
+
+@media screen and (min-width: 992px) {
+ .section-center {
+  width: 95vw;
+  padding: 4rem 1rem;
+ }
+}

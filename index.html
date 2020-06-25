@@ -17,11 +17,28 @@
   </head>
   <body>
   <!-- navbar -->
+  <!-- Nav Button -->
+  <span class="nav-btn" id="nav-btn">
+    <i class="fas fa-bars"></i>
+  </span>
+  <nav class="nav" id="nav">
+    <div class="nav__header">
+      <span class="nav--close" id="nav--close">
+        <i class="fas fa-times"></i>
+      </span>
+    </div>
+    <ul class="nav__items">
+      <li><a href="index.html" class="nav__link">Home</a></li>
+      <li><a href="skills.html" class="nav__link">skills</a></a></li>
+      <li><a href="about.html" class="nav__link">about</a></li>
+      <li><a href="products.html" class="nav__link">products</a></li>
+    </ul>
+  </nav>
 
   <!-- header -->
   <header class="header">
     <div class="header__banner">
-    <h2 class="header--h2">Creatively Build Your business website</h2>
+    <h2 class="header--h2">We Creatively Build Your business website</h2>
     <h1 class="header--h1">English or Japanese <br /></h1>
       <a href="#" class="btn btn--banner">Learn More</a>
     </div>
@@ -115,23 +132,23 @@
     <!-- project list -->
     <article class="projects__collection clearfix">
       <!-- single project -->
-      <div class="projects__collection--list">
-      <img src="./images/product-1.jpg" alt="project 1" class="projects__collection--img">
-      <h4 class="projects--title">English Content</h4>
+      <div class="collection--list">
+      <img src="./images/product-1.jpg" alt="project 1" class="projects--img">
+      <h4 class="list--title">English Content</h4>
       <h4 class="projects--price">$300</h4>
       </div>
       <!-- end of single projects -->
       <!-- single project -->
-      <div class="projects__collection--list">
-      <img src="./images/product-2.jpg" alt="project 2" class="projects__collection--img">
-      <h4 class="projects--title">Japanese Content</h4>
+      <div class="collection--list">
+      <img src="./images/product-2.jpg" alt="project 2" class="projects--img">
+      <h4 class="list--title">Japanese Content</h4>
       <h4 class="projects--price">$300</h4>
       </div>
       <!-- end of single projects -->
       <!-- single project -->
-      <div class="projects__collection--list">
-      <img src="./images/product-3.jpg" alt="project 3" class="projects__collection--img">
-      <h4 class="projects--title">Landing Page</h4>
+      <div class="collection--list">
+      <img src="./images/product-3.jpg" alt="project 3" class="projects--img">
+      <h4 class="list--title">Landing Page</h4>
       <h4 class="projects--price">$300</h4>
       </div>
       <!-- end of single projects -->
@@ -151,7 +168,7 @@
       <article class="services__card">
         <!-- img container -->
         <div class="images-container">
-          <img src="./images/write.jpg" alt="service 2" class="images-container--img" >
+          <img src="./images/write.jpg" alt="service 2" class="images-container--img" />
           <span class="images-container--icon">
             <i class="fas fa-feather-alt"></i>
           </span>
@@ -159,7 +176,7 @@
         <!-- info container -->
         <div class="services__info">
           <h4>Content Writing</h4>
-          <p class="services__info--text">We write SEO content for your web content to catch readers that converts to buyers.</p>
+          <p class="services__info--text">We write SEO content for your web content to catch readers that converts to buyers. Lorem ipsum dolor sit amet consectetur</p>
           <a href="services.html" class="btn services--btn">learn more</a>
         </div>
       </article>
@@ -200,6 +217,104 @@
     </div>
   </section>
   <!-- end of sercives section -->
-  
+
+  <!-- about section -->
+  <section class="contact">
+    <div class="section-center clearfix">
+      <article class="contact-info">
+        <div class="contact-info__item">
+          <h4 class="contact-info__title">
+            <span class="contact-info__icon">
+              <i class="fas fa-location-arrow">
+              </i>
+            </span>address
+          </h4>
+          <h4 class="contact-info__text">
+            523 N Fairfax Ave <br />
+            Los Angeles, CA 90048
+          </h4>
+        </div>
+        <div class="contact-info__item">
+          <h4 class="contact-info__title">
+            <span class="contact-info__icon">
+              <i class="fas fa-envelope">
+              </i>
+            </span>email
+          </h4>
+          <h4 class="contact-info__text">
+            email@email.com
+          </h4>
+        </div>
+        <div class="contact-info__item">
+          <h4 class="contact-info__title">
+            <span class="contact-info__icon">
+              <i class="fas fa-phone">
+              </i>
+            </span>telephone
+          </h4>
+          <h4 class="contact-info__text">
+            + 012 345 6789
+          </h4>
+        </div>
+      </article>
+
+      <article class="contact-form">
+        <h3 class="contact-form--heading">
+          contact us
+        </h3>
+        <form>
+          <div class="contact-form__group">
+            <input 
+            type="text" 
+            placeholder="name"
+            name="name"
+            class="contact-form--control" />
+            <input 
+            type="email" 
+            placeholder="email"
+            name="email"
+            class="contact-form--control" />
+            <textarea 
+            type="message" 
+            placeholder="message"
+            rows="5"
+            class="contact-form--control"></textarea>
+          </div>
+          <button type="submit" class="btn btn--submit">
+            submit here
+          </button>
+        </form>
+      </article>
+    </div>
+  </section>
+  <!-- end of about section -->
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="section-center">
+      <div class="footer-icon">
+        <a href="#" class="footer-icon__items">
+          <i class="fab fa-facebook"></i>
+        </a>
+        <a href="#" class="footer-icon__items">
+          <i class="fab fa-twitter"></i>
+        </a>
+        <a href="#" class="footer-icon__items">
+          <i class="fab fa-linkedin"></i>
+        </a>
+        <a href="#" class="footer-icon__items">
+          <i class="fab fa-instagram"></i>
+        </a>
+      </div>
+      <h4 class="footer__text">
+        &copy;<span id="date"></span>
+        <span class="footer__company">content agency</span>
+        all rights reserved
+      </h4>
+    </div>
+  </footer>
+  <!-- End of Footer -->
+
+  <script src="app.js"></script>
   </body>
   </html>

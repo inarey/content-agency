@@ -17,6 +17,7 @@ projects section
   &--list {
    margin-bottom: 2rem;   
   }
+ }
   
   &--img {
    border-radius: var(--radius);
@@ -24,7 +25,6 @@ projects section
    height: 17rem;
    object-fit: cover;
   }
- }
  
  &--price {
   color: var(--clr-primary);
@@ -37,7 +37,7 @@ projects section
 }
 
  @media screen and (min-width: 768px) {
-  .collection__list {
+  .collection--list {
    float: left;
    width: 50%;
    padding-right: 2rem;
@@ -45,7 +45,7 @@ projects section
  }
  
  @media screen and (min-width: 992px) {
-  .collection__list {
+  .collection--list {
    width: 33.3%;
   }
  }
@@ -59,7 +59,7 @@ projects section
    float: left;
    width: 70%;
   }
-  .collection__list {
+  .collection--list {
    margin-bottom: 0;
    padding: 0 1rem;
   }

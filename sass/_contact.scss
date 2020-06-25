@@ -1,0 +1,76 @@
+/*
+======================
+CONTACT
+======================
+*/
+
+.contact {
+ background: var(--clr-grey-10);
+
+ &-info {
+  margin: 1rem 0;
+
+  &__item {
+   margin-bottom: 1.75rem;
+  }
+
+  &__title {
+   color: var(--clr-primary);
+   font-weight: 400;
+  }
+
+  &__text {
+   text-transform: capitalize;
+  }
+ }
+
+ &-form {
+  margin: 1rem 0;
+  background: var(--clr-white);
+  border-radius: var(--radius);
+  text-align: center;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+  transition: var(--transition);
+  max-width: 35rem;
+
+  &:hover {
+   box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+  }
+
+  &--heading {
+   padding-top: 1.25rem;
+   color: var(--clr-grey-5);
+  }
+
+  &__group {
+   padding: 1rem 1.5rem;
+  }
+
+  &--control {
+   display: block;
+   width: 100%;
+   padding: 0.75rem 1rem;
+   border: none;
+   margin-bottom: 1.25rem;
+   background: var(--clr-grey-10);
+   border-radius: var(--radius);
+   text-transform: uppercase;
+   letter-spacing: var(--spacing);
+
+   &::placeholder {
+    font-family: var(--ff-primary);
+    color: var(--clr-grey-1);
+    text-transform: uppercase;
+    letter-spacing: var(--spacing);
+   }
+  }
+ }
+}
+
+@media screen and (min-width: 992px) {
+ .contact-form,
+ .contact-info {
+  float: left;
+  width: 50%;
+ }
+}
